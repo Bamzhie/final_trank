@@ -23,12 +23,22 @@
             <!-- Dropdown Menu -->
             <div id="features-menu" class="dropdown-menu hidden">
               <ul>
-                <li><a href="#">YouTube Keyword Tool</a></li>
-                <li><a href="#">YouTube SEO Checker</a></li>
-                <li><a href="#">YouTube Title Generator</a></li>
-                <li><a href="#">YouTube Channel Ranking</a></li>
-                <li><a href="#">Competition Research</a></li>
-                <li><a href="#">Mentions Finder</a></li>
+                <li class="feature-list">
+                  <a href="#">YouTube Keyword Tool</a>
+                </li>
+                <li class="feature-list">
+                  <a href="#">YouTube SEO Checker</a>
+                </li>
+                <li class="feature-list">
+                  <a href="#">YouTube Title Generator</a>
+                </li>
+                <li class="feature-list">
+                  <a href="#">YouTube Channel Ranking</a>
+                </li>
+                <li class="feature-list">
+                  <a href="#">Competition Research</a>
+                </li>
+                <li class="feature-list"><a href="#">Mentions Finder</a></li>
               </ul>
             </div>
           </li>
@@ -338,14 +348,14 @@
 
     <!-- Insight section -->
     <section class="insights">
-      <div class="container">
+      <div class="insight-container">
         <h2>Insights and Updates</h2>
         <p>
           Dive into our latest articles and stay updated with<br
             class="desktop-line-break"
           />industry trends, expert tips, and the newest features
         </p>
-        <div class="cards insight_cards">
+        <div class="insight_cards">
           <div class="card">
             <img src="svg/Rectangle 123gggg.svg" alt="Card" />
             <div class="timestamp-date">
@@ -583,11 +593,29 @@
       });
       // Toggle Dropdown Menu
 
+      // document
+      //   .getElementById("features-toggle")
+      //   .addEventListener("click", function () {
+      //     var menu = document.getElementById("features-menu");
+      //     menu.classList.toggle("hidden");
+      //   });
+
+      document.addEventListener("click", function (event) {
+        var menu = document.getElementById("features-menu");
+        var toggleButton = document.getElementById("features-toggle");
+
+        // Check if the click is inside the menu or on the toggle button
+        if (!menu.contains(event.target) && event.target !== toggleButton) {
+          menu.classList.add("hidden"); // Close the menu if clicking outside
+        }
+      });
+
       document
         .getElementById("features-toggle")
-        .addEventListener("click", function () {
+        .addEventListener("click", function (event) {
           var menu = document.getElementById("features-menu");
           menu.classList.toggle("hidden");
+          event.stopPropagation(); // Prevent the click from bubbling up to the document
         });
 
       // JavaScript to handle the mobile menu toggle

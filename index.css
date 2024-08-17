@@ -83,7 +83,6 @@ nav {
   background-color: white;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  padding: 16px;
   z-index: 100;
   width: 200px; /* Adjust width as necessary */
 }
@@ -343,12 +342,17 @@ nav {
   border-radius: 0.5rem;
 }
 
+.feature-list a {
+  font-size: 12px;
+}
+
 /* ########################################################### */
 
 .features {
   max-width: 100%;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 0;
+  margin-bottom: 50px;
 }
 
 .feature_texts {
@@ -695,7 +699,7 @@ p {
   text-align: center;
 }
 
-.container {
+.insight-container {
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
@@ -713,7 +717,7 @@ p {
   margin-bottom: 2.5rem;
 }
 
-.cards {
+.insight_cards {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
@@ -851,6 +855,7 @@ h3 {
   border-radius: 0.5rem;
   padding: 1.5rem;
   min-width: 500px;
+  max-width: 550px;
 }
 
 .testimonial-img {
@@ -1030,7 +1035,10 @@ h3 {
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
-  font-size: 0.875rem;
+}
+
+.footer-content p {
+  font-size: 12;
 }
 
 .footer-links {
@@ -1073,9 +1081,6 @@ h3 {
   }
 
   /* Features */
-  .trending_content {
-    max-width: 90%;
-  }
 
   .content-head {
     font-size: 20px;
@@ -1116,7 +1121,7 @@ h3 {
   }
 
   .trending_img {
-    width: 50%;
+    width: 40%;
   }
 
   .youtube p {
@@ -1177,7 +1182,7 @@ h3 {
 @media (min-width: 768px) {
   /* ############3 nav ############## */
   section {
-    max-width: 768px;
+    max-width: 1440px;
   }
 
   .desktop-menu {
@@ -1443,7 +1448,7 @@ h3 {
 
 @media (min-width: 1024px) {
   section {
-    max-width: 1024px;
+    max-width: 1440px;
   }
 
   /* ############33 nav ############# */
@@ -1478,10 +1483,11 @@ h3 {
   .cards {
     display: flex;
     max-height: 602px;
+    margin-bottom: 10%;
   }
 
   .trending {
-    height: 70%;
+    height: 65%;
     width: 75%;
   }
 
@@ -1499,7 +1505,7 @@ h3 {
   }
 
   .content-list {
-    height: 40%;
+    height: 30%;
   }
 
   .trending_img {
@@ -1549,7 +1555,7 @@ h3 {
     border-radius: 10px;
     background: #d7f1fe;
     width: 50%;
-    height: 310px;
+    height: 360px;
   }
 
   .analytics_container h4 {
@@ -1578,7 +1584,7 @@ h3 {
 
   .tag-generator {
     width: 50%;
-    height: 310px;
+    height: 360px;
   }
 
   .tag-generator h4 {
@@ -1594,32 +1600,51 @@ h3 {
   }
 
   /* ################################### Ranking$############# */
-  .heading {
+  .flex-container {
+    flex-direction: row;
+  }
+
+  .image-container {
+    position: relative;
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ranking-background-image {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .foreground-image {
+    position: relative;
+    margin-top: 15%;
+    max-width: 70%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .divider {
+    border-top: 1px solid black;
+    margin: 1rem 0;
+  }
+  .floating-element-left {
+    width: 18%;
+    top: 32%;
+  }
+
+  .hero-text-section {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding-top: 50px;
-  }
-  .heading h2 {
-    font-size: 2.5rem;
-    min-width: 80%;
   }
 
-  .flex-container {
-    margin-bottom: 20px;
-  }
-
-  .list-title {
-    font-size: 1.7rem;
-  }
-
-  .list-title p {
-    font-size: 1rem;
-  }
-
-  .footer-image img {
-    width: 6rem;
+  .hero-text-section p {
+    width: 75%;
   }
 
   /* $################### */
@@ -1713,6 +1738,16 @@ h3 {
   }
 }
 
+@media (min-width: 1125px) {
+  .trending {
+    height: 620px;
+  }
+
+  .trending_content {
+    height: 100%;
+  }
+}
+
 @media (min-width: 1280px) {
   section {
     max-width: 1440px;
@@ -1784,12 +1819,16 @@ h3 {
     min-height: 500px;
   }
 
+  .youtube_img img {
+    height: 20%;
+  }
+
   .analytics_container {
-    height: 410px;
+    height: 310px;
   }
 
   .tag-generator {
-    height: 410px;
+    height: 310px;
   }
   .tag-generator h4 {
     font-size: 32px;
@@ -1800,7 +1839,7 @@ h3 {
   }
 
   .tag_img {
-    margin-top: 50px;
+    height: 50%;
   }
 
   /* Ranking  */
@@ -1892,6 +1931,7 @@ h3 {
   .cards {
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+    margin-bottom: 25%;
   }
 
   .trending {
@@ -1926,6 +1966,7 @@ h3 {
 
   .tag_img {
     margin-top: 0;
+    width: 70%;
   }
 
   /* ################# Ranking ########################### */
@@ -1978,8 +2019,62 @@ h3 {
   .card img {
     max-height: 18rem;
   }
+
+  .insight-container {
+    height: 50%;
+  }
 }
-@media (min-width: 2560px) {
+
+@media (min-width: 1700px) {
+  .container {
+    padding: 6rem;
+  }
+
+  .ranking-background-image {
+    position: absolute;
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .heading {
+    width: 100%;
+  }
+
+  .heading h2 {
+    font-size: 60px;
+  }
+
+  .list-title {
+    font-size: 2rem;
+  }
+
+  .list-title p {
+    font-size: 1.75rem;
+  }
+
+  .footer-image img {
+    width: 12rem;
+  }
+
+  .image-container {
+    max-width: 1000px;
+  }
+}
+
+@media (min-width: 1950px) {
+  section {
+    margin: 0;
+    padding: 0;
+  }
+  .tag-generator {
+    .tag_img {
+      width: 70%;
+    }
+  }
+}
+
+@media (min-width: 2200px) {
   section {
     max-width: 100%;
   }
@@ -2157,11 +2252,32 @@ h3 {
     font-size: 2rem;
   }
 
-  .cardimg {
-    max-height: 20rem;
+  .card {
+    height: 90%;
   }
 
   .footer-content {
     justify-content: space-between;
+  }
+
+  .timestamp-date {
+    height: 20%;
+  }
+
+  .timestamp-date p {
+    font-size: 20px;
+  }
+
+  .card h3 {
+    font-size: 28px;
+  }
+
+  .insight_cards {
+    display: flex;
+    height: 800px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
   }
 }
