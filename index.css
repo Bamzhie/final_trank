@@ -5,10 +5,11 @@
 }
 html,
 body {
-  font-family: "Poppins", sans-serif; /* Apply Poppins font to the entire body */
+  font-family: "SF Pro Display";
   margin: 0;
   width: 100%;
   height: 100%;
+  padding: 0;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
@@ -288,6 +289,10 @@ nav {
   z-index: 20;
 }
 
+.second-button {
+  margin-bottom: 20%;
+}
+
 .dropdown button {
   display: flex;
   justify-content: center;
@@ -302,10 +307,12 @@ nav {
 .primary-button {
   background-color: #2c50c5;
   color: white;
-  padding: 0.75rem 1.5rem;
+  padding: 10px;
   border-radius: 0.5rem;
   text-align: center;
   cursor: pointer;
+  border: none;
+  margin-top: 15px;
 }
 
 .primary-button:hover {
@@ -324,9 +331,8 @@ nav {
 }
 
 .secondary-button img {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 0.5rem;
+  width: 64px;
+  height: 64px;
 }
 
 /* Image Below the Buttons */
@@ -732,7 +738,6 @@ p {
 
 .card {
   background-color: #ebf8ff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   padding: 1rem;
   text-align: left;
@@ -881,7 +886,7 @@ h3 {
 
 .testimonial-text p {
   color: #4a5568;
-  font-size: 10px;
+  font-size: 20px;
   margin-bottom: 0.5rem;
 }
 
@@ -890,9 +895,13 @@ h3 {
   color: #2d3748;
 }
 
-.testimonial-role {
+.testimonial-role p {
   color: #718096;
-  font-size: 0.875rem;
+  font-size: 16px;
+}
+
+.testimonial-img-container img {
+  height: 100%;
 }
 
 .button-container {
@@ -926,6 +935,7 @@ h3 {
   margin: 0 auto;
   text-align: center;
   padding: 0 1rem;
+  font-family: "SF Pro Display";
 }
 
 .faq h2 {
@@ -1016,6 +1026,7 @@ h3 {
   font-size: 12px;
   color: #4a5568;
   margin-bottom: 2rem;
+  font-family: "SF Pro Display ";
 }
 
 .ytrank-word-section hr {
@@ -1108,7 +1119,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3);
-    gap: 4px;
+    gap: 0;
   }
 
   .list-item {
@@ -1181,7 +1192,7 @@ h3 {
   }
 
   .testimonial-text {
-    font-size: 1rem;
+    font-size: 18px;
   }
 }
 
@@ -1224,12 +1235,20 @@ h3 {
     align-items: flex-start;
   }
 
+  .hero-text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .hero-text-section h1 {
     font-size: 2.5rem;
   }
 
   .hero-text-section p {
     font-size: 1.25rem;
+    max-width: 80%;
   }
 
   .buttons-section {
@@ -1252,14 +1271,13 @@ h3 {
   /* trendings */
 
   .trending {
-    height: 75%;
+    height: auto;
     padding: 5%;
     border-radius: 20px;
   }
 
   .trending_img {
-    float: right;
-    max-width: 100%;
+    display: none;
   }
 
   .trending_img img {
@@ -1273,7 +1291,7 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3);
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 0;
   }
 
   .list-item {
@@ -1282,7 +1300,7 @@ h3 {
     border-radius: 4px;
     max-width: 170px;
     height: 25px;
-    font-size: 10px;
+    font-size: 15px;
   }
   .trending_content {
     height: 75%;
@@ -1293,7 +1311,11 @@ h3 {
   }
 
   .content-head h4 {
-    font-size: 28px;
+    font-size: 32px;
+  }
+
+  .content-head p {
+    font-size: 20px;
   }
 
   .youtube h4 {
@@ -1310,7 +1332,7 @@ h3 {
     padding-top: 50px;
   }
   .heading h2 {
-    font-size: 1.5rem;
+    font-size: 32px;
     min-width: 80%;
   }
 
@@ -1326,20 +1348,40 @@ h3 {
     font-size: 1rem;
   }
 
+  .youtube_img {
+    display: none;
+  }
+
   .footer-image img {
     width: 6rem;
+  }
+
+  .analytics_img {
+    display: none;
+  }
+
+  .tag_img {
+    display: none;
+  }
+
+  .youtube h4 {
+    font-size: 32px;
+  }
+
+  .youtube p {
+    font-size: 16px;
   }
 
   /* Reason container $######################## */
 
   .reason-title {
-    font-size: 22px;
+    font-size: 32px;
     padding-bottom: 20px;
   }
 
   .description {
     height: 10%;
-    font-size: 10px;
+    font-size: 16px;
   }
 
   .content-container {
@@ -1374,9 +1416,43 @@ h3 {
     height: 1%;
   }
 
+  .analytics h4 {
+    font-size: 32px;
+  }
+
+  .analytics p {
+    font-size: 16px;
+  }
+
+  .tag-generator h4 {
+    font-size: 32px;
+  }
+
+  .tag-generator p {
+    font-size: 16px;
+  }
+
+  /* reason */
+
+  .text-section button {
+    margin-top: 20px;
+  }
+
   /* ######################### insight ################ */
   h3 {
     font-size: 1.375rem;
+  }
+
+  .insight-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .insight-container p {
+    font-size: 20px;
+    max-width: 70%;
   }
 
   .desktop-line-break {
@@ -1394,11 +1470,13 @@ h3 {
   .insight_cards {
     display: flex;
     width: 100%;
-    gap: 10px;
+    gap: 20px;
   }
 
   .card {
-    width: 50%;
+    width: 40%;
+    padding: 11px;
+    padding-bottom: 25px;
   }
 
   .card h3 {
@@ -1419,7 +1497,20 @@ h3 {
     display: flex;
   }
 
+  .testimonial-role {
+    color: #718096;
+    font-size: 16px;
+  }
+
+  .card h3 {
+    font-size: 20px;
+  }
   /* ############## FAQ #################### */
+
+  .faq-container {
+    font-family: "SF Pro Display";
+  }
+
   .faq h2 {
     font-size: 2.5rem;
   }
@@ -1449,16 +1540,25 @@ h3 {
   }
 }
 
-@media (min-width: 896px) {
-}
-
 @media (min-width: 1024px) {
   section {
     max-width: 1440px;
   }
 
   /* ############33 nav ############# */
-
+  .download-button {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center text horizontally */
+    background-color: #2c50c5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-left: 24px;
+    width: 180px;
+    text-align: center; /* Ensure text is centered */
+  }
   /* Hero style ############################################### */
 
   .floating-element-left {
@@ -1473,7 +1573,7 @@ h3 {
 
   .hero-text-section h1 {
     font-size: 52px;
-    max-width: 100vw;
+    max-width: 80vw;
   }
 
   .hero-text-section p {
@@ -1485,7 +1585,24 @@ h3 {
     max-width: 1400px;
   }
   /* Feature ########################################## */
+  .trending_img {
+    display: block;
+    max-width: 200px;
+    float: left;
+  }
+  .youtube_img {
+    display: block;
+  }
+  .analytics_img {
+    display: block;
+  }
 
+  .tag_img {
+    display: none;
+  }
+  .tag_img {
+    display: block;
+  }
   .cards {
     display: flex;
     max-height: 602px;
@@ -1507,7 +1624,7 @@ h3 {
   }
 
   .content-head p {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .content-list {
@@ -1531,9 +1648,9 @@ h3 {
     padding: 3px 10px;
     background-color: #e9f7fe;
     border-radius: 4px;
-    max-width: 170px;
+    max-width: auto;
     height: 25px;
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .second_div {
@@ -1542,7 +1659,7 @@ h3 {
 
   .youtube {
     width: 100%;
-    height: 300px;
+    height: 260px;
   }
   .youtube_img {
     width: 40%;
@@ -1561,7 +1678,7 @@ h3 {
     border-radius: 10px;
     background: #d7f1fe;
     width: 50%;
-    height: 360px;
+    height: 250px;
   }
 
   .analytics_container h4 {
@@ -1590,7 +1707,7 @@ h3 {
 
   .tag-generator {
     width: 50%;
-    height: 360px;
+    height: 250px;
   }
 
   .tag-generator h4 {
@@ -1598,11 +1715,13 @@ h3 {
   }
 
   .tag-generator p {
-    font-size: 9px;
+    font-size: 15px;
     height: 0;
   }
   .tag_img {
-    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    float: right;
   }
 
   /* ################################### Ranking$############# */
@@ -1746,11 +1865,13 @@ h3 {
 
 @media (min-width: 1125px) {
   .trending {
-    height: 620px;
+    max-height: 750px;
+    max-width: 510px;
   }
 
-  .trending_content {
-    height: 100%;
+  .second_div {
+    max-width: 760px;
+    max-height: 860px;
   }
 }
 
@@ -1934,10 +2055,20 @@ h3 {
 
   /* Feature ################################################# */
 
+  .features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Make the .features div take up the full viewport height */
+  }
+
   .cards {
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     margin-bottom: 25%;
+    max-width: 100%;
+    width: 100%;
   }
 
   .trending {
@@ -2142,7 +2273,7 @@ h3 {
   }
 
   .trending {
-    height: 900px;
+    min-height: 900px;
     max-width: 600px;
     margin-left: 300px;
   }
