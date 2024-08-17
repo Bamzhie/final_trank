@@ -1572,6 +1572,10 @@ h3 {
     max-width: 1440px;
   }
 
+  .secondary-button {
+    margin-top: 15px;
+  }
+
   /* ############33 nav ############# */
   .download-button {
     display: flex;
@@ -1911,7 +1915,7 @@ h3 {
   /* ################## FAQ ################## */
 
   .faq h2 {
-    font-size: 32px;
+    font-size: 18px;
     color: #2d3b47;
   }
 
