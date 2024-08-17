@@ -2141,10 +2141,16 @@ h3 {
   }
 
   .trending_img img {
-    position: absolute;
-    bottom: 0; /* Align at the bottom */
-    left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
+    width: 300px;
+    height: 280px;
+  }
+
+  .trending_img {
+    display: flex; /* or display: grid; */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-end; /* Align at the bottom */
+    width: 400px; /* Keep the container width fixed */
+    height: 416px; /* Keep the container height fixed */
   }
 
   .trending_content {
@@ -2188,6 +2194,7 @@ h3 {
     position: absolute;
     bottom: 10%;
     right: 10%;
+    transform: rotate(8deg); /* Rotates the div by 20 degrees */
   }
 
   .tag-generator {
