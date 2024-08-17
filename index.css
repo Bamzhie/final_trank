@@ -2110,9 +2110,15 @@ h3 {
   }
 
   /* Feature ################################################# */
+
   .cards {
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
+    min-height: 800px;
+  }
+
+  .features {
+    min-height: 1200px;
   }
 
   .feature_texts {
@@ -2128,6 +2134,18 @@ h3 {
     max-width: 600px;
     margin-left: 300px;
   }
+  .trending_img {
+    position: relative;
+    width: 400px; /* Ensure the container takes up its full width */
+    height: 416px; /* Ensure the container takes up its full height */
+  }
+
+  .trending_img img {
+    position: absolute;
+    bottom: 0; /* Align at the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+  }
 
   .trending_content {
     min-width: 400px;
@@ -2141,7 +2159,7 @@ h3 {
     border-radius: 2px;
     max-width: 300px;
     height: 50px; /* Increase height to provide more space for text */
-    font-size: 20px;
+    font-size: 12px;
     line-height: 10px; /* Match line-height to the height for vertical centering */
     text-align: center; /* Center the text horizontally */
     display: grid; /* Enable flexbox for better centering control */
