@@ -459,6 +459,12 @@ nav {
   background-color: #ffecff;
   padding: 5%;
   border-radius: 20px;
+  max-height: 700px;
+}
+
+.tag_img {
+  width: 70%;
+  height: 70%;
 }
 
 .child_seo {
@@ -2118,7 +2124,7 @@ h3 {
   /* Feature ################################################# */
 
   .cards {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 3rem;
     min-height: 800px;
   }
