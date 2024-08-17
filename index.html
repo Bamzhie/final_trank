@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>yRank.</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- Logo and Menu Items Wrapper -->
+      <div class="nav-left">
+        <div class="brand-title">ytRank.</div>
+        <!-- Desktop Menu Items -->
+        <ul class="desktop-menu">
+          <li class="dropdown">
+            <a id="features-toggle" class="dropdown-button"> Features </a>
+            <!-- Dropdown Menu -->
+            <div id="features-menu" class="dropdown-menu hidden">
+              <ul>
+                <li><a href="#">YouTube Keyword Tool</a></li>
+                <li><a href="#">YouTube SEO Checker</a></li>
+                <li><a href="#">YouTube Title Generator</a></li>
+                <li><a href="#">YouTube Channel Ranking</a></li>
+                <li><a href="#">Competition Research</a></li>
+                <li><a href="#">Mentions Finder</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </label>
+
+      <!-- Download Button (Desktop) -->
+      <a href="#" class="download-button desktop-only">Download Extension</a>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu">
+        <label for="menu-toggle" class="close-icon">
+          <svg
+            class="icon"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </label>
+        <ul class="mobile-menu-items">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <a href="#" class="download-button">Download Chrome Extension</a>
+      </div>
+    </nav>
+
+    <!-- #################3 hero ################### -->
+    <section class="hero-section">
+      <!-- Background Image -->
+      <img src="assets/bg.svg" alt="Background" class="background-image" />
+
+      <!-- Floating Elements -->
+      <div class="floating-elements">
+        <img
+          src="assets/side.svg"
+          alt="Floating Element"
+          class="floating-element-left"
+        />
+        <img
+          src="assets/right.svg"
+          alt="Floating Element"
+          class="floating-element-right"
+        />
+      </div>
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <!-- Text Section -->
+        <div class="hero-text-section">
+          <h1>
+            Creators Grow Their
+            <span class="highlight-text">YouTube</span> Channel with ytRank
+          </h1>
+          <p>
+            Optimize your content, outsmart the competition, and accelerate your
+            growth with AI-powered tools.
+          </p>
+        </div>
+      </div>
+
+      <!-- Buttons Section -->
+      <div class="buttons-section">
+        <button class="primary-button">Sign in with Google</button>
+        <button class="secondary-button">
+          <img src="assets/play.svg" alt="Play Button" />
+          <span>WATCH VIDEO</span>
+        </button>
+      </div>
+
+      <!-- Image Below the Buttons -->
+      <div class="image-below-buttons">
+        <img src="assets/laptophero.png" alt="ytRank dashboard" />
+      </div>
+    </section>
+    <!-- Featurs section -->
+
+    <section>
+      <div class="features">
+        <div class="feature_texts">
+          <h1>Powerful Features to Elevate Your Contents</h1>
+          <p>
+            Optimize your content, outsmart the competition, and accelerate your
+            growth width AI-powered tools
+          </p>
+        </div>
+        <div class="cards">
+          <div class="trending">
+            <div class="trending_content">
+              <div class="content-head">
+                <h4>Unlock Trending Kewords</h4>
+                <p>
+                  Discover high-potential keywords to boost your video's
+                  visibility and reach.
+                </p>
+              </div>
+              <div class="content-list">
+                <ul class="list-container">
+                  <li class="list-item">small business ideas</li>
+                  <li class="list-item">fitness for beginners</li>
+                  <li class="list-item">work from home jobs</li>
+                  <li class="list-item">online dating advice</li>
+                  <li class="list-item">skincare routine</li>
+                </ul>
+              </div>
+              <div class="trending_img">
+                <img src="./assets/trending.svg" alt="trending" />
+              </div>
+            </div>
+          </div>
+          <div class="second_div">
+            <div class="youtube">
+              <h4>Youtube SEO Score</h4>
+              <p>
+                Analyze your content for SEO best practices, get actionable
+                insights, and ensure your videos are optimized to rank higher in
+                search results.
+              </p>
+              <div class="youtube_img">
+                <img src="./assets/seo_score.svg" alt="seo" />
+              </div>
+            </div>
+            <div class="child_seo">
+              <div class="analytics_container">
+                <div class="analytics">
+                  <h4>Analytics</h4>
+                  <p>Track your campaign performance</p>
+                </div>
+
+                <img
+                  src="./assets/analytics.svg"
+                  alt="analytics"
+                  class="analytics_img"
+                />
+              </div>
+              <div class="tag-generator">
+                <h4>Tag Generator</h4>
+                <p>
+                  Create optimized tags for your videos to improve
+                  discoverability and engagement.
+                </p>
+                <img src="./assets/tag.svg" alt="tag" class="tag_img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ranking section -->
+    <section class="container ranking_container">
+      <div class="ranking-second-container">
+        <!-- Heading -->
+        <div class="heading">
+          <h2>
+            Boost rankings, visibility, and attract more viewers with AI-driven
+            insights
+          </h2>
+        </div>
+
+        <!-- Flex Container -->
+        <div class="flex-container">
+          <!-- Image Container -->
+          <div class="image-container">
+            <img
+              src="assets/seranki.svg"
+              alt="Background graphic"
+              class="ranking-background-image"
+            />
+            <img
+              src="assets/boost.svg"
+              alt="AI insights graphic"
+              class="foreground-image"
+            />
+          </div>
+
+          <!-- List Container -->
+          <div class="ranking-list-container">
+            <ul>
+              <li>
+                <span class="list-title">01. Daily Videos Ideas</span>
+                <hr class="divider" />
+                <p>
+                  Get fresh, AI-generated content ideas tailored to your YouTube
+                  niche and audience.
+                </p>
+              </li>
+              <li>
+                <span class="list-title">02. Channel Competition Analysis</span>
+                <hr class="divider" />
+                <p>
+                  Our advanced tool provides in-depth insights into your
+                  competitors' strategies, performance, and audience engagement.
+                </p>
+              </li>
+              <li>
+                <span class="list-title">03. Mentions Finder</span>
+                <hr class="divider" />
+                <p>
+                  This powerful tool scans millions of videos to find where your
+                  brand is being talked about, helping you stay informed and
+                  engaged.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer image, positioned at the bottom right -->
+        <div class="footer-image">
+          <img src="assets/ranking.svg" alt="Footer graphic" />
+        </div>
+      </div>
+    </section>
+    <!-- reason section -->
+    <section class="blue-background section-container">
+      <div class="content-container">
+        <!-- Text Section -->
+        <div class="text-section">
+          <h3 class="reason-title">Why YouTube SEO Score Matters</h3>
+          <p class="description">
+            In the bustling world of YouTube, standing out can be tough. That's
+            where your YouTube SEO score comes into play. It's more than just a
+            number - it's your key to visibility, engagement, and growth.
+            <br /><br />
+            A high SEO score means your content is optimized to be found by the
+            right audience at the right time. It ensures your videos rank higher
+            in search results, appear in suggested videos, and attract more
+            views.
+          </p>
+
+          <!-- Points Section -->
+          <div class="points-section">
+            <div class="point">
+              <img
+                src="./assets/point.svg"
+                alt="Point icon"
+                class="point-icon"
+              />
+              <p>Increased Visibility</p>
+            </div>
+            <div class="point">
+              <img
+                src="./assets/point.svg"
+                alt="Point icon"
+                class="point-icon"
+              />
+              <p>Higher Click-Through Rates</p>
+            </div>
+            <div class="point">
+              <img
+                src="./assets/point.svg"
+                alt="Point icon"
+                class="point-icon"
+              />
+              <p>Better Engagement</p>
+            </div>
+            <div class="point">
+              <img
+                src="./assets/point.svg"
+                alt="Point icon"
+                class="point-icon"
+              />
+              <p>Long-term Growth</p>
+            </div>
+          </div>
+
+          <!-- Learn More Button -->
+          <button class="learn-more-button">Learn more</button>
+        </div>
+
+        <!-- Vector Image Section -->
+        <div class="image-section">
+          <img
+            src="./assets/seo_group.svg"
+            alt="SEO Analysis Image"
+            class="vector-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Insight section -->
+    <section class="insights">
+      <div class="container">
+        <h2>Insights and Updates</h2>
+        <p>
+          Dive into our latest articles and stay updated with<br
+            class="desktop-line-break"
+          />industry trends, expert tips, and the newest features
+        </p>
+        <div class="cards insight_cards">
+          <div class="card">
+            <img src="svg/Rectangle 123gggg.svg" alt="Card" />
+            <div class="timestamp-date">
+              <p class="timestamp">6 min read</p>
+              <p class="date">Aug 3, 2024</p>
+            </div>
+            <h3>
+              Boost Your YouTube Success with the New ytRank Chrome Extension
+            </h3>
+          </div>
+
+          <div class="card">
+            <img src="svg/Rectangle 123gggg.svg" alt="Card" />
+            <div class="timestamp-date">
+              <p class="timestamp">6 min read</p>
+              <p class="date">Aug 3, 2024</p>
+            </div>
+            <h3>
+              Grow Your YouTube Channel<br class="tablet-line-break" />with
+              ytRank: AI-Powered<br class="tablet-line-break" />Insights and
+              Tools
+            </h3>
+          </div>
+
+          <div class="card">
+            <img src="svg/Rectangle 123gggg.svg" alt="Card" />
+            <div class="timestamp-date">
+              <p class="timestamp">6 min read</p>
+              <p class="date">Aug 3, 2024</p>
+            </div>
+            <h3>
+              Boost Your YouTube Success with the New ytRank Chrome Extension
+            </h3>
+          </div>
+        </div>
+
+        <div class="button-container">
+          <button class="read-more">Read More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+
+    <section class="testimonials">
+      <div class="title-container">
+        <h2>
+          <span>Real stories.</span><br />
+          Don’t take our word for it
+        </h2>
+        <img src="svg/image 9.svg" alt="Title Image" class="title-img" />
+      </div>
+
+      <div class="testimonials-content">
+        <div class="testimonials-content-container">
+          <!-- Testimonial 1 -->
+          <div class="testimonial">
+            <div class="testimonial-img-container">
+              <img
+                src="svg/Rectangle 126man.svg"
+                alt="Testimonial Image"
+                class="testimonial-img"
+              />
+              <img
+                src="svg/image 10star.svg"
+                alt="Star Rating"
+                class="star-rating"
+              />
+            </div>
+            <div class="testimonial-text">
+              <p>
+                “YTRank has completely transformed my YouTube strategy! The
+                keyword tool helped me find trending topics, and my views have
+                doubled in just a month.”
+              </p>
+              <p class="testimonial-author">Yohan Dave</p>
+              <p class="testimonial-role">
+                Small Business Owner, Content Creator
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial second">
+            <div class="testimonial-img-container">
+              <img
+                src="svg/Rectangle 126666.svg"
+                alt="Testimonial Image"
+                class="testimonial-img"
+              />
+              <img
+                src="svg/image 10star.svg"
+                alt="Star Rating"
+                class="star-rating"
+              />
+            </div>
+            <div class="testimonial-text">
+              <p>
+                “YTRank has completely transformed my YouTube strategy! The
+                keyword tool helped me find trending topics, and my views have
+                doubled in just a month.”
+              </p>
+              <p class="testimonial-author">Yohan Dave</p>
+              <p class="testimonial-role">
+                Small Business Owner, Content Creator
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button class="read-more-button">Read More</button>
+      </div>
+    </section>
+
+    <!-- Faq section -->
+
+    <section class="faq-container">
+      <!-- FAQ Section -->
+      <div class="faq">
+        <h2>Have a Question?</h2>
+        <p>
+          From getting started to advanced features. Find quick<br />
+          answers to help you make the most of our platform.
+        </p>
+
+        <!-- Separator Line -->
+        <hr />
+
+        <!-- Accordion Items -->
+        <div class="accordion">
+          <!-- Accordion Item 1 -->
+          <div class="accordion-item">
+            <div class="accordion-label">What is ytRank?</div>
+            <div class="accordion-content">
+              <p>
+                YTRank is an AI-powered tool designed to help YouTube creators
+                optimize their content, improve SEO, and grow their channels
+                through keyword research, SEO analysis, title generation, and
+                more.
+              </p>
+            </div>
+          </div>
+
+          <!-- Accordion Item 2 -->
+          <div class="accordion-item">
+            <div class="accordion-label">
+              How does the YouTube Keyword Tool work?
+            </div>
+            <div class="accordion-content">
+              <p>
+                The YouTube Keyword Tool helps you find the best keywords to use
+                in your video titles, descriptions, and tags, enhancing your
+                video’s discoverability on the platform.
+              </p>
+            </div>
+          </div>
+
+          <!-- Accordion Item 3 -->
+          <div class="accordion-item">
+            <div class="accordion-label">
+              What does the YouTube SEO Checker do?
+            </div>
+            <div class="accordion-content">
+              <p>
+                The YouTube SEO Checker analyzes your video content and metadata
+                to ensure it is optimized for search engines, increasing your
+                chances of ranking higher in search results.
+              </p>
+            </div>
+          </div>
+
+          <!-- Accordion Item 4 -->
+          <div class="accordion-item">
+            <div class="accordion-label">
+              How can the YouTube Title Generator benefit me?
+            </div>
+            <div class="accordion-content">
+              <p>
+                The YouTube Title Generator creates compelling titles for your
+                videos, helping you attract more viewers and improve engagement.
+              </p>
+            </div>
+          </div>
+
+          <!-- Accordion Item 5 -->
+          <div class="accordion-item">
+            <div class="accordion-label">
+              What is the YouTube Channel Ranking feature?
+            </div>
+            <div class="accordion-content">
+              <p>
+                The YouTube Channel Ranking feature evaluates your channel's
+                overall performance, providing insights on how to improve your
+                channel's visibility and subscriber growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Separator Line -->
+      <hr />
+
+      <!-- YTRank Word Section -->
+      <div class="ytrank-word-section">
+        <div class="ytrank-word">YTRank <span class="highlight">.</span></div>
+        <div class="ytrank-description">
+          Join thousands of creators using YTRank for keyword<br />
+          research, SEO scoring, and smart content ideas to enhance<br />
+          their YouTube strategy
+        </div>
+        <hr />
+      </div>
+
+      <!-- Footer -->
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2024 ytRank. All rights reserved.</p>
+        <div class="footer-links">
+          <p>Privacy policy</p>
+          <p>Terms of Service</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".accordion-label").forEach((label) => {
+        label.addEventListener("click", () => {
+          const accordionItem = label.parentElement;
+          accordionItem.classList.toggle("active");
+        });
+      });
+      // Toggle Dropdown Menu
+
+      document
+        .getElementById("features-toggle")
+        .addEventListener("click", function () {
+          var menu = document.getElementById("features-menu");
+          menu.classList.toggle("hidden");
+        });
+
+      // JavaScript to handle the mobile menu toggle
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("change", function () {
+          var body = document.body;
+          if (this.checked) {
+            body.style.overflow = "hidden"; // Prevent scrolling when menu is open
+          } else {
+            body.style.overflow = ""; // Allow scrolling when menu is closed
+          }
+        });
+      document.querySelectorAll(".accordion-item").forEach((item) => {
+        item.querySelector("label").addEventListener("click", function () {
+          const content = item.querySelector(".accordion-item-content");
+          content.classList.toggle("hidden");
+          const isOpen = !content.classList.contains("hidden");
+          item.querySelector("label").classList.toggle("bg-gray-100", !isOpen);
+          item.querySelector("label").classList.toggle("bg-gray-200", isOpen);
+        });
+      });
+
+      // Toggle Mobile Menu
+    </script>
+  </body>
+</html>
